@@ -7,6 +7,7 @@ In this exercise, you will work with two Abstract Data Types, a `Cat` and a `Ped
 The `Cat` class has already been implemented for you, with the following conditions:
 - A cat's name must not be null or empty, or longer than 8 characters.
 - A cat's age must be between 0 and 30, inclusive.
+- Each cat has a reference to its first child, and a reference to its next sibling.
 
 You will need to implement the `Pedigree` class and the following methods:
 - **bool AddCat(string catName, string? motherName = null)**: Adds a cat to the pedigree. If the motherName is null, the cat is added to the end of the tree by **depth-first search**. If the motherName is not null, the cat is added as a child of the cat with the given motherName.
