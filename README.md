@@ -21,10 +21,16 @@ Also create a test plan for both classes, make sure you include valid, invalid a
 ```csharp
 class CatTests {
     [Test("Cat.IsValidName(null) should return false")]
+    // Each test method must return a TestResult object
     public TestResult TestNullCatName() {
-        string input = "IsValidName(null)";
+        string inputStr = "IsValidName(null)";
         string expectedStr = "false";
         bool actual = Cat.IsValidName(null);
+        // A test result contains:
+        // - The string representation of the input
+        // - The string representation of the expected output
+        // - The string representation of the actual output
+        // - A boolean indicating whether the test passed
         return new TestResult(input, expectedStr, actual.ToString(), actual == false);
     }
 }
