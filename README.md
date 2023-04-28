@@ -1,4 +1,4 @@
-# Cat Pedigree - Application of Tree Algorithms [[Download Template](https://github.com/cab301/archive/main.zip)]
+# Cat Pedigree - Application of Tree Algorithms [[Download Template](https://github.com/cab301/cat-pedigree/archive/main.zip)]
 
 In this exercise, you will work with two Abstract Data Types, a `Cat` and a `Pedigree`. A `Cat` is a node in the `Pedigree` tree, containing a cat's name and age.
 
